@@ -59,14 +59,14 @@ class Onboard_ extends StatelessWidget {
               children: [
                 boldText(boldt1),
                 boldText(boldt2),
-                SizedBox(height: 30,),
+                SizedBox(height: 10,),
                 Padding(
-                  padding: const EdgeInsets.only(left: 50.0, right: 20),
+                  padding: const EdgeInsets.only(left: 20.0, right: 25),
                   child: Column(
                     children: [
-                      smallText(smallt1),
-                      smallText(smallt2),
-                      smallText(smallt3),
+                      smallText(smallt1,15),
+                      smallText(smallt2,15),
+                      smallText(smallt3,15,),
                     ],
                   ),
                 )
@@ -92,6 +92,13 @@ class Onboard_ extends StatelessWidget {
       ),
     );
   }
+
+
+
+
+
+
+
   Container dots(Color color) {
     return Container(
       height: 10,
@@ -102,14 +109,14 @@ class Onboard_ extends StatelessWidget {
     );
   }
 
-  Text smallText(String text) {
+  static Text smallText(String text, double font) {
     return Text(
       text,
-      style: GoogleFonts.montserrat(fontWeight: FontWeight.w500),
+      style: GoogleFonts.montserrat(fontWeight: FontWeight.w500,fontSize: font),
     );
   }
 
-  Text boldText(String text) {
+  static Text boldText(String text) {
     return Text(
       text,
       style: GoogleFonts.montserrat(fontWeight: FontWeight.w700, fontSize: 33),

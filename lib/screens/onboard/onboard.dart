@@ -40,7 +40,7 @@ class _OnboardState extends State<Onboard> {
             boldt2:"Quickly & Safely",
             smallt1:"Do fugiat tempor ex amet labore aliqua exercitation",
             smallt2:"officia qui eu elit commodo elit magna.",
-            smallt3: "Sit dolor ",
+            smallt3: "",
             dotColor1: Constants.primaryFaded,
             dotColor2: Constants.primaryColor,
             dotColor3: Constants.primaryFaded,
