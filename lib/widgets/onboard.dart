@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:parking/screens/authentication/login.dart';
+import 'package:parking/screens/authentication/authWelcome.dart';
 import 'package:parking/utils/constants.dart';
 
 class Onboard_ extends StatelessWidget {
@@ -64,9 +64,9 @@ class Onboard_ extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20.0, right: 25),
                   child: Column(
                     children: [
-                      smallText(smallt1,15),
-                      smallText(smallt2,15),
-                      smallText(smallt3,15,),
+                      smallText(smallt1,15,FontWeight.w400),
+                      smallText(smallt2,15,FontWeight.w400),
+                      smallText(smallt3,15,FontWeight.w400),
                     ],
                   ),
                 )
@@ -109,10 +109,14 @@ class Onboard_ extends StatelessWidget {
     );
   }
 
-  static Text smallText(String text, double font) {
+  static Text smallText(String text, double font, FontWeight weight) {
     return Text(
       text,
-      style: GoogleFonts.montserrat(fontWeight: FontWeight.w500,fontSize: font),
+      style: GoogleFonts.montserrat(
+        fontWeight: weight,
+        fontSize: font,
+        
+        ),
     );
   }
 

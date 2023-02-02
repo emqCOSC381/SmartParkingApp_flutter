@@ -6,6 +6,8 @@ class Constants{
   static final Color primaryColor = Color(0xFFdc143c);
   static final Color primaryFaded = Color(0x66dc143c);
   static final Color whiteColor = Color(0xFFffffff);
+  static final Color darkColor = Color(0xFF2e3333);
+  static final Color transparentColor = Colors.transparent;
 
 
 
