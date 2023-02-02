@@ -15,6 +15,10 @@ class Constants{
   static final String onboard2 = "assets/imgs/png/onboard/onboard2.png";
   static final String onboard3 = "assets/imgs/png/onboard/onboard3.png";
 
+  static final String login1 = "assets/imgs/png/letsin/login3.png";
+
+
+
   //Dimensions
     static double width(BuildContext context){return MediaQuery.of(context).size.width;}
     static double height(BuildContext context){return MediaQuery.of(context).size.height;}

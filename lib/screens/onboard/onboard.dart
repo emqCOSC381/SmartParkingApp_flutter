@@ -16,6 +16,7 @@ class _OnboardState extends State<Onboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: PageView(
         children: <Widget>[
           // image,boldt1,boldt2,smallt1,smallt2, smallt3, pageColor
@@ -29,6 +30,9 @@ class _OnboardState extends State<Onboard> {
             dotColor1: Constants.primaryColor,
             dotColor2: Constants.primaryFaded,
             dotColor3: Constants.primaryFaded,
+            transparent: false,
+            context:context
+
             ),
           Onboard_(
             image:Constants.onboard2,
@@ -40,6 +44,9 @@ class _OnboardState extends State<Onboard> {
             dotColor1: Constants.primaryFaded,
             dotColor2: Constants.primaryColor,
             dotColor3: Constants.primaryFaded,
+            transparent: false,
+            context:context
+
             ),
           Onboard_(
             image:Constants.onboard3,
@@ -48,9 +55,11 @@ class _OnboardState extends State<Onboard> {
             smallt1:"Do fugiat tempor ex amet labore aliqua exercitation",
             smallt2:"officia qui eu elit commodo elit magna.",
             smallt3: "Sit dolor ",
-            dotColor1: Constants.primaryFaded,
-            dotColor2: Constants.primaryFaded,
-            dotColor3: Constants.primaryColor,
+            dotColor1: Colors.transparent,
+            dotColor2: Colors.transparent,
+            dotColor3: Colors.transparent,
+            transparent: true,
+            context:context
             ),
         ],
       ),

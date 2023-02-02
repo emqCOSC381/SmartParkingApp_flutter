@@ -1,5 +1,8 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:parking/screens/authentication/login.dart';
 import 'package:parking/utils/constants.dart';
 
 class Onboard_ extends StatelessWidget {
@@ -12,6 +15,8 @@ class Onboard_ extends StatelessWidget {
   final Color dotColor1;
   final Color dotColor2;
   final Color dotColor3;
+  final bool transparent;
+  final BuildContext context;
 
   Onboard_({
     required this.image,
@@ -23,8 +28,9 @@ class Onboard_ extends StatelessWidget {
     required this.dotColor1,
     required this.dotColor2,
     required this.dotColor3,
+    required this.transparent,
+    required this.context,
   });
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -70,7 +76,7 @@ class Onboard_ extends StatelessWidget {
           Container(
             height: Constants.height(context) * 0.1,
             width: Constants.width(context),
-            child: Row(
+            child: transparent? next(context) :Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -86,7 +92,6 @@ class Onboard_ extends StatelessWidget {
       ),
     );
   }
-
   Container dots(Color color) {
     return Container(
       height: 10,
@@ -108,6 +113,25 @@ class Onboard_ extends StatelessWidget {
     return Text(
       text,
       style: GoogleFonts.montserrat(fontWeight: FontWeight.w700, fontSize: 33),
+    );
+  }
+  
+  Container next(context) {
+    return Container(
+      child: GestureDetector(
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
+        },
+        child: CircleAvatar(
+          backgroundColor: Constants.primaryColor,
+          foregroundColor: Constants.whiteColor,
+          child: Icon(
+            Icons.arrow_right_alt_sharp,
+            weight: 100,
+            size: 50,
+            ),
+        ),
+      ),
     );
   }
 }
