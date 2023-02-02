@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: PAppTheme.lightTheme,
       darkTheme: PAppTheme.darkTheme,
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
       home: SplashScreen()
     );

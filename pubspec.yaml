@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_svg: ^1.1.6
   google_fonts: ^4.0.1
   liquid_progress_indicator: ^0.4.0
   liquid_swipe: ^3.0.0
@@ -72,7 +73,6 @@ flutter:
     - family: Ananda
       fonts:
         - asset: assets/fonts/Ananda.ttf
-
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
