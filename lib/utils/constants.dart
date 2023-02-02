@@ -19,6 +19,10 @@ class Constants{
 
   static final String login1 = "assets/imgs/png/letsin/login1.png";
 
+  static final String facebook = "assets/imgs/png/letsin/fb.png";
+  static final String google = "assets/imgs/png/letsin/google.png";
+  static final String appple = "assets/imgs/png/letsin/app.png";
+
 
 
   //Dimensions
